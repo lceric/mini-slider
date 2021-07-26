@@ -51,6 +51,10 @@ class MiniSlider {
       dom.style.width = getPix(this.width)
     }
   }
+
+  prev() {
+    // TODO
+  }
   
   next() {
     const { wrapper, duration } = this
@@ -113,25 +117,5 @@ class MiniSlider {
     wrapper.removeEventListener('transitionend',  this.bindTransitionEndHandler, false)
 
     this.isAnimated = true
-  }
-}
-
-window.onload = function () {
-  const container = document.querySelector('.mini-slider-container')
-  const wrapper = document.querySelector('.mini-slider-wrapper')
-  const sliderItems  = document.querySelectorAll('.mini-slider-item')
-  
-  const miniSlider = new MiniSlider({
-    container,
-    wrapper,
-    sliderItems,
-  })
-
-  console.log(miniSlider)
-  
-  miniSlider.autoplay()
-
-  window.onresize = function () {
-    miniSlider.resize()
   }
 }

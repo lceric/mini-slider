@@ -45,6 +45,28 @@
       </div>
     </div>
   </div>
+
   <script src="./slider.js"></script>
+  <script>
+    window.onload = function () {
+      const container = document.querySelector('.mini-slider-container')
+      const wrapper = document.querySelector('.mini-slider-wrapper')
+      const sliderItems  = document.querySelectorAll('.mini-slider-item')
+      
+      const miniSlider = new MiniSlider({
+        container,
+        wrapper,
+        sliderItems,
+      })
+
+      console.log(miniSlider)
+      
+      miniSlider.autoplay()
+
+      window.onresize = function () {
+        miniSlider.resize()
+      }
+    }
+  </script>
 </body>
 </html>
