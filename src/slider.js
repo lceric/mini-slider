@@ -8,7 +8,7 @@ const tools = {
 }
 const { getPix, setStyles } = tools
 
-class MiniSlider {
+export class Creator {
   constructor(opts) {
     this.container = opts.container
     this.wrapper = opts.wrapper

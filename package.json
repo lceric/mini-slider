@@ -1,0 +1,28 @@
+{
+  "name": "mini-slider",
+  "version": "0.1.0",
+  "description": "mini slider",
+  "main": "./dist/mini-slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/slider.js --format umd --name MiniSlider --file dist/mini-slider.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lceric/mini-slider.git"
+  },
+  "keywords": [
+    "mini",
+    "slider",
+    "javascript"
+  ],
+  "author": "Eric",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lceric/mini-slider/issues"
+  },
+  "homepage": "https://github.com/lceric/mini-slider#readme",
+  "devDependencies": {
+    "rollup": "^2.54.0"
+  }
+}
